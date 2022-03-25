@@ -1,0 +1,45 @@
+APRENDENDO GIT
+
+O Git é um sistema de controle de versão open source, usado
+para controlar o histórico de alteraçãoes de arquivos de
+desenvolvimento de software.
+
+Dentro do sistema Git, podemos criar um repositório dos
+projetos que serão desenvolvidos.
+Para isso utilizamos o seguinte comando:
+git init
+
+Para enviarmos um arquivo, que foi criado para o repositório
+local, e desejamos enviá-lo para o repositório online,
+utilizamos o seguinte comando: 
+git push [nome do repositório remoto]
+
+Quando desejamos alterar algum arquivo, é possível realizar através
+de um Commit com as alterações feitas juntamente com uma mensagem
+descrevendo o que foi alterado.
+Isso é possível através do comando: 
+git add [arquivo] //Os arquivos que serão adicionados ao commit
+git commit -m "mensagem" //Mensagem descritiva da alteração
+
+Para atualizarmos o repositório local com o online, utilizamos 
+o comando Pull da seguinte forma: 
+git pull [repositório remoto]
+
+Quando desejamos unir duas ou mais alterações na branch master
+para que possam fazer parte do mesmo projeto, utilizamos o
+comando Merge, assim: 
+git chekout master //Entrando na branch destino
+git merge [branch que irá unir as alterações]
+
+Se desejamos clonar um repositório online para que possamos
+trabalhar em um repositório local, utilizamos o comando: 
+git clone [link do repositório online]
+
+Para visualizar o status de arquivos criados ou modificados dentro do repositório, usamos o comando:
+git status
+
+Com o momando Diff é possivel observar as mudanças feitas nos arquivos, da seguinte forma:
+git diff
+
+Para verificar o histório dos Commits, usamos o comando:
+git log
